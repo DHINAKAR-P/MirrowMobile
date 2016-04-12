@@ -1,0 +1,78 @@
+<ion-view view-title="Profile" class="profile">
+    <ion-content>
+    
+        <header>
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <a href="#" class="logo">
+                            <img src="img/logo.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p>MIRROW</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="selection-mode">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <h3>Select Connection Mode :</h3>
+                        <ion-toggle ng-model="connectionMode" toggle-class="toggle-calm" ng-click="SurveyCreate()">Online</ion-toggle>
+                    </div>
+                </div>	
+               <!-- <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                    	  <a href="#/choose-route" class="button button-clear button-positive">Start</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section id="mode-content">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                    	<div class="mode1">
+                    	<a href="#/choose-route" class="button button-clear button-positive">
+                        	<img src="img/start-mode.jpg" alt=""/>
+                            <h4>Start</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                    	<div class="mode1">
+                        	<img src="img/msg-mode.jpg" alt=""/>
+                            <h4>Outbox</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                    	<div class="mode1">
+                        	<img src="img/info-mode.jpg" alt=""/>
+                            <h4>Setting</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                    	<div class="mode1">
+                        	<img src="img/set-mode.jpg" alt=""/>
+                            <h4>Setting</h4>
+                        </div>
+                    </div>
+                 </div>
+             </div>       
+        </section>
+      <footer>	   
+    	<script src="bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+        
+        <!--Online Switch Script -->
+		<script src="bootstrap/switch/js/highlight.js"></script>
+        <script src="bootstrap/switch/js/bootstrap-switch.js"></script>
+        <script src="bootstrap/switch/js/main.js"></script>
+      
+      </footer>
+      
+    </ion-content>
+</ion-view>

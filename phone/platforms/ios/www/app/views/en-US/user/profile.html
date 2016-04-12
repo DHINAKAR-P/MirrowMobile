@@ -1,0 +1,24 @@
+<ion-view view-title="Profile" class="profile">
+    <ion-content>
+        <div class="container">
+            <div class="content">
+                <div class="user">
+                    <div class="photo">
+                        <img src="img/profile.svg" alt="Profile Picture">
+                    </div>
+                    <div class="data">
+                        <h3 class="title">{{firstName + ' ' + lastName}}</h3><br>
+                    </div>
+                </div>
+               	<div>
+               		<ion-toggle ng-model="connectionMode" toggle-class="toggle-calm">Online</ion-toggle>
+               	</div>
+               
+                <div class="sign-out text-center">
+                    <a href="#/choose-route" class="button button-clear button-positive">Start</a>
+                </div>
+            </div>
+        </div>
+      
+    </ion-content>
+</ion-view>
